@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #222;
+    color: rgb(28, 134, 28);
+}
+/* *,
+*:before,
+*:after {
+    box-sizing: border-box;
+} */
+
+p {
+    margin: 0 0 5px;
+}
+
+/* menu block */
+.menu {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.menu-item {
+    margin-bottom: 5px;
+    border: 1px solid #0f3b1a;
+}
+
+.menu-title {
+    color: rgb(28, 134, 28);
+    display: block;
+    cursor: pointer;
+    padding: 15px 15px;
+
+    transition: .2s ease-out;
+}
+
+.menu-title:hover {
+    background-color: #0f3b1a;
+}
+
+.menu-input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: absolute;   
+}
+
+.menu-input:checked ~.menu-item{
+    background-color: #0f3b1a;
+}
+
+.menu-input:checked + .menu-text {
+    display: block ;
+
+}
+.menu-text {
+    display: none;
+    padding: 10px 10px 0 0;
+    font-size: 14px;
+    color: rgb(28, 134, 28)
+}
